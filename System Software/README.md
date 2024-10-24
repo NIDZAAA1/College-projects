@@ -1,12 +1,21 @@
-Abstract Computer System Emulator
-Overview
-This project implements three key components of an abstract computer system:
+Abstract Computer System Tools
 
-Assembler - A single-pass assembler for converting assembly code into machine code.
-Linker - A linker independent of the target architecture that resolves symbols and relocates sections.
-Emulator - An emulator that simulates the execution of programs on an abstract processor.
+Project Overview
 
-Project Structure
-src/: Source code for assembler, linker, and emulator.
-inc/: Header files.
-tests/: Test files demonstrating the functionality of the tools.
+This repository contains tools for simulating and compiling programs for an abstract computer system. The tools include:
+
+Assembler: Translates assembly code into machine code.
+Linker: Resolves symbols and combines object files into a final executable format.
+Emulator: Executes the machine code on an abstract processor simulation.
+
+These components are designed to work together to emulate the full lifecycle of a program, from source code to execution on a simulated architecture.
+
+Directory Structure
+
+src/: Contains source code for the assembler, linker, and emulator.
+
+inc/: Header files for the project.
+
+misc/: Lexer and parser.
+
+tests/: Sample assembly files and test cases.
